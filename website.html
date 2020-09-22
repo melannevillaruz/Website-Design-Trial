@@ -16,12 +16,14 @@
     </div>
  <!--Standard Menu-->
 <nav>
-    <div class="nav-wrapper white">
+    <header>
+        <nav class="nav-wrapper white">
         <div class="container">
-  
-       
-      <a href="website.html" class="brand-logo purple-text">L<sub>o</sub>op</a>
-        <ul id="nav-mobile" class="right hide-on-small-and-down">
+            <a href="" class="brand-logo purple-text">L<sub>o</sub>op</a>
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons black-text">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
         <li>
             
             <a href="#"><p class="black-text">Home</p>Home</a>
@@ -43,9 +45,17 @@
         <br>
  <!-- Text -->
  <div class="container">
-      <p class="flow-text black-text">Be unique. 
-          Stand out from the rest.</p>
-               
+     <div class="row">
+
+    
+        <div class="col s12 l4 push-l7 offset-l1">
+        <img src="images/OIP__2_-removebg-preview.png" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h3 class="indigo-text text-darken-4">Be unique. 
+            Stand out from the rest.</h3>
+      
+        </div>      
         <body>
  
    
@@ -57,5 +67,12 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
   
+  <script>
+  $(document).ready(function(){
+        $ ('.sidenav').sidenav();
+            });
+            
+            </script>
+    
 </body>
 </html>
