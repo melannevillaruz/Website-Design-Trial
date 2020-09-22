@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-
+<head>
 <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d27020a4a.js" crossorigin="anonymous"></script>
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Website</title>
@@ -15,43 +17,45 @@
 </div>
 <!--Standard Menu-->
 <nav>
-  <div class="nav-wrapper white">
-      <div class="container">
-
-     
-    <a href="website.html" class="brand-logo purple-text">L<sub>o</sub>op</a>
-      <ul id="nav-mobile" class="right hide-on-small-and-down">
-      <li>
-          </a>
-          
-          <a href="#"><p class="black-text">Home</p>Home</a>
+    <div class="nav-wrapper white">
+        <div class="container">
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons black-text">menu</i>
+        </a>
+      <a href="website.html" class="brand-logo purple-text">L<sub>o</sub>op</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+         
+        <li>
+            
+            <a href="website.html"><p class="black-text">Home</p></a>
+        </li>
+        <li>
+            <a href="website2.html"><p class="black-text">About</p></a>
+        </li>
+        <li>
+            <a href="website3.html"><p class="black-text">Services</p></a>
+        </li>
+        <li>
+            <a href="website4.html"><p class="black-text">Contact</p></a>
+        </li>
+        
+        </ul>
+        <ul class="sidenav" id="mobile-links">
+        <li>
+            
+          <a href="website.html"><p class="black-text">Home</p></a>
       </li>
       <li>
-          <a href="website2.html"><p class="black-text">About</p>About</a>
+          <a href="website2.html"><p class="black-text">About</p></a>
       </li>
       <li>
-          <a href="website3.html"><p class="black-text">Services</p>Services</a>
+          <a href="website3.html"><p class="black-text">Services</p></a>
       </li>
       <li>
-          <a href="website4.html"><p class="black-text">Contact</p>Contact</a>
+          <a href="website4.html"><p class="black-text">Contact</p></a>
       </li>
-      <div class="container"><i class="material-icons black-text">menu-24px 1</i></div>
-      </ul>
-      <ul class="sidenav" id="mobile-links">
-        <a href="#"><p class="black-text">Home</p>Home</a>
-    </li>
-    <li>
-        <a href="website2.html"><p class="black-text">About</p>About</a>
-    </li>
-    <li>
-        <a href="website3.html"><p class="black-text">Services</p>Services</a>
-    </li>
-    <li>
-        <a href="website4.html"><p class="black-text">Contact</p>Contact</a>
-      </id></ul>
+    </ul>
     </div>
-      <br>
-      <br>
       <br>
 <!-- Text -->
 <div class="container">
@@ -64,10 +68,15 @@
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
    
+     
+     <script>
+        $(document).ready(function(){
+          $ ('.sidenav').sidenav();
+              });
+              
+              </script>
  </body>
  </html>
  
  
 
-</body>
-</html>
