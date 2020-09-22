@@ -18,28 +18,48 @@
 <nav>
     <div class="nav-wrapper white">
         <div class="container">
-  
-       
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons black-text">menu</i>
+        </a>
       <a href="website.html" class="brand-logo purple-text">L<sub>o</sub>op</a>
-        <ul id="nav-mobile" class="right hide-on-small-and-down">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+         
         <li>
             
-            <a href="#"><p class="black-text">Home</p>Home</a>
+            <a href="website.html"><p class="black-text">Home</p></a>
         </li>
         <li>
-            <a href="website2.html"><p class="black-text">About</p>About</a>
+            <a href="website2.html"><p class="black-text">About</p></a>
         </li>
         <li>
-            <a href="website3.html"><p class="black-text">Services</p>Services</a>
+            <a href="website3.html"><p class="black-text">Services</p></a>
         </li>
         <li>
-            <a href="website4.html"><p class="black-text">Contact</p>Contact</a>
+            <a href="website4.html"><p class="black-text">Contact</p></a>
         </li>
-        <div class="container"><i class="material-icons black-text">menu-24px 1</i></div>
+        
         </ul>
+        <ul class="sidenav" id="mobile-links">
+        <li>
+            
+          <a href="website.html"><p class="black-text">Home</p></a>
+      </li>
+      <li>
+          <a href="website2.html"><p class="black-text">About</p></a>
+      </li>
+      <li>
+          <a href="website3.html"><p class="black-text">Services</p></a>
+      </li>
+      <li>
+          <a href="website4.html"><p class="black-text">Contact</p></a>
+      </li>
+    </ul>
+    </div>
+
       </div>
         <br>
         <br>
+        <div class="container">
         <div class="w3-container w3-padding-32" id="contact us">
             <h3 class="flow-text black-text">Contact Us</h3>
             <p class="flow-text black-text">Loop USA, Inc.
@@ -62,7 +82,7 @@
               </button>
             </form>
           </div>
-               
+        </div>  
         <body>
  
    
@@ -74,6 +94,12 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
   
+    <script>
+    $(document).ready(function(){
+      $ ('.sidenav').sidenav();
+          });
+          
+          </script>
 </body>
 </html>
 
