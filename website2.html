@@ -18,32 +18,53 @@
 <nav>
     <div class="nav-wrapper white">
         <div class="container">
-  
-       
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons black-text">menu</i>
+        </a>
       <a href="website.html" class="brand-logo purple-text">L<sub>o</sub>op</a>
-        <ul id="nav-mobile" class="right hide-on-small-and-down">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+         
         <li>
             
-            <a href="#"><p class="black-text">Home</p>Home</a>
+            <a href="website.html"><p class="black-text">Home</p></a>
         </li>
         <li>
-            <a href="website2.html"><p class="black-text">About</p>About</a>
+            <a href="website2.html"><p class="black-text">About</p></a>
         </li>
         <li>
-            <a href="website3.html"><p class="black-text">Services</p>Services</a>
+            <a href="website3.html"><p class="black-text">Services</p></a>
         </li>
         <li>
-            <a href="website4.html"><p class="black-text">Contact</p>Contact</a>
+            <a href="website4.html"><p class="black-text">Contact</p></a>
         </li>
-        <div class="container"><i class="material-icons black-text">menu-24px 1</i></div>
+        
         </ul>
-      </div>
+        <ul class="sidenav" id="mobile-links">
+        <li>
+            
+          <a href="website.html"><p class="black-text">Home</p></a>
+      </li>
+      <li>
+          <a href="website2.html"><p class="black-text">About</p></a>
+      </li>
+      <li>
+          <a href="website3.html"><p class="black-text">Services</p></a>
+      </li>
+      <li>
+          <a href="website4.html"><p class="black-text">Contact</p></a>
+      </li>
+    </ul>
+    </div>
         <br>
         <br>
         <br>
  <!-- Text -->
  <div class="container">
-      <p class="flow-text black-text">About Us</p>
+    <div class="col s12 l4 push-l7 offset-l1">
+        <img src="images/Ad-Agencies-new-overtime-law.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 pull-l5 right-align offset-l1">
+      <h3 class="black-text">About Us</h3>
       <p class="flow-text black-text"> We are a multi-faceted company with expertise in the field of marketing communications. </p>
         <br>
         <p class="flow-text black-text">Established in 2009, the company prides itself for its many achievements including being in the Fortune 200 of the best companies in digital marketing.</p>
@@ -64,5 +85,11 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
   
+    <script>
+        $(document).ready(function(){
+          $ ('.sidenav').sidenav();
+              });
+              
+              </script>
 </body>
 </html>
